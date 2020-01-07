@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SplashScreen">
+
+    <ImageView
+        android:layout_width="70dp"
+        android:src="@drawable/plane"
+        android:id="@+id/imgPlane"
+        android:layout_marginTop="60dp"
+        android:layout_gravity="center"
+        android:layout_height="70dp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:weightSum="100"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Quotes "
+            android:fontFamily="@font/arkhipfont"
+            android:textSize="45dp"
+            android:id="@+id/quotes"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="FLY"
+            android:fontFamily="@font/arkhipfont"
+            android:textSize="40dp"
+            android:id="@+id/fly"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="W E L C O M E !"
+        android:fontFamily="@font/arkhipfont"
+        android:textAlignment="center"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:id="@+id/welcome"
+        android:textStyle="bold"
+        android:textColor="#307691"
+        android:textSize="20dp"
+        android:layout_height="wrap_content"/>
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="340dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="22sp"
+            android:backgroundTint="#6CD0CD"
+            app:cardCornerRadius="8dp"
+            app:cardMaxElevation="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="monospace"
+                android:padding="3dp"
+                android:lines="1"
+                android:text="Get 50% Off On Your First Month!"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+
+            app:layout_constraintBottom_toTopOf="@+id/cardView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_margin="20dp"
+            android:id="@+id/cardView1"
+            app:cardCornerRadius="30dp"
+            app:cardBackgroundColor="#F7F9FA"
+            app:layout_constraintVertical_bias="0.261"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="cursive"
+                    android:paddingStart="2dp"
+                    android:paddingTop="10dp"
+                    android:id="@+id/cursive"
+                    android:text="Motivational Quotes:"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/holo_blue_light"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="monospace"
+                    android:paddingStart="2dp"
+                    android:paddingTop="30dp"
+                    android:paddingEnd="20dp"
+                    android:paddingBottom="40dp"
+                    android:paddingLeft="50dp"
+                    android:paddingRight="50dp"
+                    android:text="&quot;With the new day comes new strength and new thoughts.&quot;"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/holo_blue_light"
+                    android:textSize="20sp"
+                    />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</LinearLayout>
